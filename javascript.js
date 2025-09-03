@@ -15,10 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const about = this.querySelector(".about");
   const projectsButton = this.querySelector(".projects-button");
   const projects = this.querySelector(".projects");
-  const contactButton = this.querySelector(".contact-button")
+  const contactButton = this.querySelector(".contact-button");
   const contact = this.querySelector(".contact");
-
-  
 
   menu.addEventListener("click", function () {
     overlay.classList.toggle("active");
@@ -31,16 +29,15 @@ document.addEventListener("DOMContentLoaded", function () {
     linkMenu.forEach(function (r) {
       r.classList.toggle("active");
     });
-  
-     if (overlay.classList.contains('active')) {
-      document.body.style.overflow = 'hidden';
-     } else {
-      document.body.style.overflow = '';
-     }
 
+    if (overlay.classList.contains("active")) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "";
+    }
   });
 
-  overlayButtons.addEventListener("click", function() {
+  overlayButtons.addEventListener("click", function () {
     overlay.classList.toggle("active");
     menu.classList.toggle("active");
     overlayButtons.classList.toggle("active");
@@ -51,26 +48,24 @@ document.addEventListener("DOMContentLoaded", function () {
     linkMenu.forEach(function (r) {
       r.classList.toggle("active");
     });
-    document.body.style.overflow = '';
+    document.body.style.overflow = "";
   });
 
-  homeButton.addEventListener("click", function() {
-    home.scrollIntoView({behavior: "smooth"});
+  homeButton.addEventListener("click", function () {
+    home.scrollIntoView({ behavior: "smooth" });
   });
 
-  aboutButton.addEventListener("click", function() {
-    about.scrollIntoView({behavior: "smooth"});
+  aboutButton.addEventListener("click", function () {
+    about.scrollIntoView({ behavior: "smooth" });
   });
 
-  projectsButton.addEventListener("click", function() {
-    projects.scrollIntoView({behavior: "smooth"});
+  projectsButton.addEventListener("click", function () {
+    projects.scrollIntoView({ behavior: "smooth" });
   });
 
-  contactButton.addEventListener("click", function() {
-    contact.scrollIntoView({behavior: "smooth"});
+  contactButton.addEventListener("click", function () {
+    contact.scrollIntoView({ behavior: "smooth" });
   });
-
-
 
   linkedin.addEventListener("click", function () {
     window.open("https://www.linkedin.com/in/ognjen-ristic-0b9988347/");
@@ -80,18 +75,15 @@ document.addEventListener("DOMContentLoaded", function () {
     window.open("https://github.com/Quaza31");
   });
 
-  window.addEventListener("scroll", function() {
-    if(window.scrollY > 0) {
-      scrollArrow.classList.add("scrolled")
-
+  window.addEventListener("scroll", function () {
+    if (window.scrollY > 0) {
+      scrollArrow.classList.add("scrolled");
     } else {
-      scrollArrow.classList.remove("scrolled")
+      scrollArrow.classList.remove("scrolled");
     }
-
-  })
+  });
 
   VD_logo.addEventListener("click", function () {
     window.open("https://quaza31.itch.io/vampire-defenders");
   });
-
 });
