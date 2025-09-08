@@ -293,8 +293,8 @@ h3 {
 .restaurant-buttons {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   margin: 0 auto;
-  width: 200px;
   height: auto;
   gap: 45px;
 }
@@ -306,13 +306,16 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 40px;
-  width: 80px;
+  height: 50px;
+  width: 180px;
   margin-top: 15px;
   background-color: #003c64;
   border: white solid 1px;
   transition: margin-left 0.7s cubic-bezier(0.4, 0, 0.2, 1), transform 0.3s ease;
   box-shadow: 10px 6px 0 rgb(0, 60, 99, 0.26);
+  font-family: "Press Start 2P", monospace;
+  color: white;
+  font-size: 16px;
 }
 
 .restaurant-buttons button:hover {
