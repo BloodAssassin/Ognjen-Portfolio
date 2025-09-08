@@ -325,6 +325,10 @@ h3 {
   z-index: 3;
 }
 
+.landlord img {
+  width: 30%;
+}
+
 .contact {
   display: flex;
   flex-direction: column;
