@@ -17,6 +17,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const projects = this.querySelector(".projects");
   const contactButton = this.querySelector(".contact-button");
   const contact = this.querySelector(".contact");
+  const restaurantButtons = this.querySelectorAll(".restaurant-buttons");
 
   menu.addEventListener("click", function () {
     overlay.classList.toggle("active");
@@ -28,6 +29,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     linkMenu.forEach(function (r) {
       r.classList.toggle("active");
+    });
+
+    restaurantButtons.forEach(function (g) {
+      g.classList.toggle("active");
     });
 
     if (overlay.classList.contains("active")) {

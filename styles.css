@@ -1,3 +1,7 @@
+html {
+  scrollbar-gutter: stable;
+}
+
 .menu-row {
   position: fixed;
   display: flex;
@@ -297,6 +301,14 @@ h3 {
   margin: 0 auto;
   height: auto;
   gap: 45px;
+  opacity: 1;
+  transition: opacity 0.3s ease-out;
+}
+
+.restaurant-buttons.active {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-out;
 }
 
 .restaurant-buttons button {
@@ -366,7 +378,7 @@ h3 {
 
 .contact h2 a {
   text-decoration: none;
-  color: #40c9a2;
+  color: #06b3df;
 }
 
 .contact h2 a:hover {
@@ -379,17 +391,18 @@ footer {
   align-items: center;
   text-align: center;
   background-color: #525252;
-  border-top: 4px solid #40c9a2;
+  border-top: 4px solid #06b3df;
   height: 80px;
   margin: -8px;
 }
 
 .credits {
+  width: 100%;
   color: #f5d0a5;
   font-family: "Press Start 2P", monospace;
   font-size: 15px;
   text-align: center;
-  display: flex;
+  /* display: flex; */
 }
 
 .spacing {
