@@ -1,7 +1,3 @@
-html {
-  scrollbar-gutter: stable;
-}
-
 .menu-row {
   position: fixed;
   display: flex;
@@ -67,11 +63,18 @@ html {
 body {
   background-color: white;
   user-select: none;
+  font-family: "Press Start 2P", monospace;
 }
 
 body > :not(header):not(footer) {
-  margin: 0 300px;
+  margin: 0 400px;
 }
+
+.contact h2 {
+  margin: 0 !important;
+  width: 100%;
+}
+
 /* $Check if it works */
 body > :not(.projects .VD .logo) {
   user-select: none;
@@ -94,7 +97,6 @@ body > :not(.projects .VD .logo) {
   height: 100vh;
   background: #003c64;
   transition: width 0.7s ease-out, opacity 0.7s ease-out;
-  overflow: hidden;
   opacity: 0;
 }
 
@@ -222,19 +224,6 @@ body > :not(.projects .VD .logo) {
 }
 
 /* $ maybe change this */
-.projects h1 {
-  display: inline-block;
-  margin: 0 auto;
-  margin-top: 40px;
-  font-family: "Press Start 2P", monospace;
-  font-size: 40px;
-  text-align: center;
-  color: white;
-  background-color: #003c64;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 .divider {
   position: relative;
@@ -247,16 +236,21 @@ body > :not(.projects .VD .logo) {
 }
 
 .projects h2,
+h1,
 h3 {
   display: inline-block;
   margin: 0 auto;
-  margin-top: 50px;
-  margin-bottom: 20px;
+  margin-top: 40px;
   font-family: "Press Start 2P", monospace;
   font-size: 30px;
+  text-align: center;
   color: white;
   background-color: #003c64;
-  padding: 10px 10px;
+  padding: 10px;
+  padding-right: 15px;
+  border-radius: 3px;
+  line-height: 5px 20%;
+  line-height: 1.4;
 }
 
 /* .projects .VD {
@@ -286,6 +280,17 @@ h3 {
   width: auto;
   margin-top: -200px;
 } */
+
+.restaurant p {
+  user-select: none;
+  color: #525252;
+  font-family: "Press Start 2P", monospace;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.8;
+  text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.599);
+  margin: 40px auto;
+}
 
 .restaurant-image {
   display: flex;
@@ -337,43 +342,58 @@ h3 {
   z-index: 3;
 }
 
+.restaurant-image {
+  box-shadow: 5px 5px 0 rgb(0, 60, 99, 0.26);
+}
+
+.landlord p {
+  user-select: none;
+  color: #525252;
+  font-family: "Press Start 2P", monospace;
+  font-size: 15px;
+  text-align: left;
+  line-height: 1.8;
+  text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.599);
+  margin: 40px auto;
+  margin-top: 50px;
+}
+
 .landlord img {
   width: 30%;
+  box-shadow: 5px 7px 0 rgb(0, 60, 99, 0.26);
 }
 
 .contact {
   display: flex;
   flex-direction: column;
-
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
 .contact h1 {
   margin: 0 auto;
   margin-top: 40px;
   font-family: "Press Start 2P", monospace;
-  font-size: 40px;
+  font-size: 30px;
   text-align: center;
   color: white;
   background-color: #003c64;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
+  border-radius: 3px;
 }
 
 .contact h2 {
-  margin: 0 auto;
-  margin-top: 40px;
+  display: flex;
+  width: auto;
+  margin-bottom: 100px;
   font-family: "Press Start 2P", monospace;
   font-size: 30px;
   text-align: center;
   color: #525252;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  margin-bottom: 20px;
+  padding: 10px 20px;
 }
 
 .contact h2 a {
@@ -387,12 +407,12 @@ h3 {
 
 footer {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: baseline;
+  align-items: end;
   text-align: center;
   background-color: #525252;
-  border-top: 4px solid #06b3df;
-  height: 80px;
+  /* border-top: 4px solid #06b3df; */
+  height: 60px;
   margin: -8px;
 }
 

@@ -32,11 +32,15 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     restaurantButtons.forEach(function (g) {
-      g.classList.toggle("active");
+      setTimeout(() => {
+        g.classList.toggle("active");
+      }, 30);
     });
 
     if (overlay.classList.contains("active")) {
-      document.body.style.overflow = "hidden";
+      setTimeout(() => {
+        document.body.style.overflow = "hidden";
+      }, 700);
     } else {
       document.body.style.overflow = "";
     }
