@@ -64,10 +64,7 @@ body {
   background-color: white;
   user-select: none;
   font-family: "Press Start 2P", monospace;
-}
-
-body > :not(header):not(footer) {
-  margin: 0 400px;
+  overflow-x: hidden;
 }
 
 .contact h2 {
@@ -78,6 +75,21 @@ body > :not(header):not(footer) {
 /* $Check if it works */
 body > :not(.projects .VD .logo) {
   user-select: none;
+}
+
+.pageContent {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1000px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 780px) {
+  .pageContent {
+    padding-top: 60px;
+  }
 }
 
 .line {
@@ -188,7 +200,7 @@ body > :not(.projects .VD .logo) {
 
 .home img {
   user-select: none;
-
+  max-width: 95vw;
   width: 400px;
   height: auto;
   display: block;
@@ -224,6 +236,7 @@ body > :not(.projects .VD .logo) {
 
 .projects {
   text-align: center;
+  width: 100%;
 }
 
 /* $ maybe change this */
@@ -284,6 +297,10 @@ h3 {
   margin-top: -200px;
 } */
 
+.restaurant {
+  width: 100%;
+}
+
 .restaurant p {
   user-select: none;
   color: #525252;
@@ -291,15 +308,14 @@ h3 {
   font-size: 15px;
   text-align: left;
   line-height: 1.8;
+  width: 100%;
   text-shadow: 0px 1px 0 rgba(0, 0, 0, 0.599);
   margin: 40px auto;
 }
 
 .restaurant-image {
-  display: flex;
-  margin: 0 auto;
-  width: 700px;
-  height: auto;
+  width: 100%;
+  max-width: 90vw;
 }
 
 .restaurant-buttons {
@@ -406,6 +422,18 @@ h3 {
 
 .contact h2 a:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 991px) {
+  .contact h2 {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .contact h2 {
+    font-size: 0.9em;
+  }
 }
 
 footer {
